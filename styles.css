@@ -21,10 +21,39 @@ body, html a,p{
 main{
     flex: 1;
 }
+/*----------CSS TIL HEADER----------*/
+.header_nav{
+    background-color: #405046;
+    padding: 20px;
+}
 
+.header_nav ul{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
 
-/*CSS TIL FOOTER*/
+.header_nav-link{
+    list-style: none;
+    color: #F5F1E7;
+    align-content: center;
+}
 
+.header_nav-link img{
+    width: 150px;
+    height: auto;
+}
+
+.header_nav-link--selected{
+    list-style: none;
+    color: #F5F1E7;
+    align-content: center;
+    text-decoration: underline;
+    text-decoration-color: #F5F1E7;
+    text-decoration-thickness: 1.5px;
+}
+
+/*----------CSS TIL FOOTER----------*/
 
 .footer_top{
     position: relative; /* nødvendig for absolut placering af socials */
@@ -41,7 +70,7 @@ main{
     text-decoration: none;
     color: #082D10;
     font-size: 20px;
-    flex-wrap: nowrap; /* forhindrer linjeskift i teksten */
+    flex-wrap: nowrap;
     font-weight: 300;
 }
 
@@ -51,15 +80,15 @@ main{
 
 .footer_contact{
     display: flex;
-    flex-direction: column; /* én linje per info */
+    flex-direction: column;
     gap: 10px;
 }
 
 
 .footer_socials{
     position: absolute;
-    left: 50%; /* flyt elementets venstre kant til midten */
-    transform: translateX(-50%); /* centrer elementet horisontalt */
+    left: 50%; 
+    transform: translateX(-50%);
     display: flex;
     gap: 10px;
     align-items: center;
