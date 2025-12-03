@@ -39,12 +39,24 @@ main{
 }
 
 .footer_contact p{
-    font-weight: 1000;
+    font-weight: 900;
 }
 
 .footer_contact{
     display: flex;
     flex-direction: column;
+}
+
+
+.footer_socials{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.footer_socials div{
+    width: 1fr;
 }
 
 .footer_copyright{
