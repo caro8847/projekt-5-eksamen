@@ -1,14 +1,12 @@
 /*CSS TIL FOOTER*/
-.footer{
+
+
+.footer_top{
     background-color: #A7B9A8;
-}
-
-.footer_copyright{
-    background-color: #405046;
-}
-
-.footer_copyright p{
-    color: #F5F1E7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
 }
 
 .footer_contact a,p{
@@ -16,7 +14,30 @@
     color: #082D10;
 }
 
-.footer{
+.footer_contact{
     display: flex;
-    
+    flex-direction: column;
 }
+
+.footer_copyright{
+    background-color: #405046;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_copyright p{
+    color: #F5F1E7;
+}
+
+
+
+
+
+
+
+.footer_logo img{
+    width: 200px;
+    height: auto;
+}
+
