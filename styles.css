@@ -26,8 +26,6 @@ main{
 /*CSS TIL FOOTER*/
 
 
-
-
 .footer_top{
     position: relative; /* nødvendig for absolut placering af socials */
     background-color: #A7B9A8;
@@ -114,9 +112,12 @@ main{
         position:relative;
         display: flex;
         justify-content: center;
-        margin-top: 5px;
     }
 
+    .footer_socials img{
+        width: 50px;
+        height: auto;
+    }
 
     .footer_copyright p{
         font-size: 15px;
@@ -125,4 +126,10 @@ main{
     .footer_copyright img{
         width: 13px;
     }
+
+    .footer_logo img{
+        width: 150px;
+        height: auto;
+    }
+
 }
