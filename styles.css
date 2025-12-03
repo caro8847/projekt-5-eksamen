@@ -1,5 +1,19 @@
 /*CSS TIL FOOTER*/
 
+*{
+    margin: 0;
+}
+
+body,html{
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex: 1;
+}
 
 .footer_top{
     background-color: #A7B9A8;
@@ -24,6 +38,11 @@
     padding: 30px;
     display: flex;
     flex-direction: row;
+    gap: 5px;
+}
+
+.footer_copyright p:last-child{
+    margin-left: 15px;
 }
 
 .footer_copyright p{
