@@ -28,8 +28,11 @@ main{
     background-color: #A7B9A8;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-start;
     padding: 30px;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
 .footer_contact a,p{
@@ -45,19 +48,22 @@ main{
 .footer_contact{
     display: flex;
     flex-direction: column;
+    margin-right: 100px; 
 }
 
 
 .footer_socials{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     gap: 10px;
-    margin-top: 10px;
+    margin: 0 auto;
+    align-items: center;
 }
 
-.footer_socials div{
-    width: 1fr;
+.footer_contact, .footer_logo{
+    flex: 0 0 auto;
 }
+
 
 .footer_copyright{
     background-color: #405046;
