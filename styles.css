@@ -1,0 +1,22 @@
+/*CSS TIL FOOTER*/
+.footer{
+    background-color: #A7B9A8;
+}
+
+.footer_copyright{
+    background-color: #405046;
+}
+
+.footer_copyright p{
+    color: #F5F1E7;
+}
+
+.footer_contact a,p{
+    text-decoration: none;
+    color: #082D10;
+}
+
+.footer{
+    display: flex;
+    
+}
