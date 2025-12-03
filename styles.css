@@ -25,17 +25,23 @@ main{
 
 /*CSS TIL FOOTER*/
 .footer_top{
+    position: relative; /* nødvendig for absolut placering af socials */
     background-color: #A7B9A8;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-between; /* kontakt til venstre, logo til højre */
     padding: 30px;
+    flex-wrap: wrap;
 }
 
-.footer_contact a,p{
+.footer_contact a, 
+.footer_contact p,
+.footer_copyright p{
     text-decoration: none;
     color: #082D10;
     font-size: 20px;
+    white-space: nowrap; /* forhindrer linjeskift i teksten */
+    font-weight: 300;
 }
 
 .footer_contact p{
@@ -44,15 +50,18 @@ main{
 
 .footer_contact{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* én linje per info */
+    gap: 10px;
 }
 
 
 .footer_socials{
+    position: absolute;
+    left: 50%; /* flyt elementets venstre kant til midten */
+    transform: translateX(-50%); /* centrer elementet horisontalt */
     display: flex;
-    justify-content: center;
     gap: 10px;
-    margin-top: 10px;
+    align-items: center;
 }
 
 .footer_contact, .footer_logo{
