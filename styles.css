@@ -11,6 +11,13 @@ body,html{
     flex-direction: column;
 }
 
+body, html a,p{
+    font-family: "houschka-rounded", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+}
+
 main{
     flex: 1;
 }
@@ -26,6 +33,11 @@ main{
 .footer_contact a,p{
     text-decoration: none;
     color: #082D10;
+    font-size: 20px;
+}
+
+.footer_contact p{
+    font-weight: 1000;
 }
 
 .footer_contact{
