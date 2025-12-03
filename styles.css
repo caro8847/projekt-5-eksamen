@@ -1,4 +1,4 @@
-/*CSS TIL FOOTER*/
+
 
 *{
     margin: 0;
@@ -22,6 +22,8 @@ main{
     flex: 1;
 }
 
+
+/*CSS TIL FOOTER*/
 .footer_top{
     background-color: #A7B9A8;
     display: flex;
