@@ -1,0 +1,15 @@
+.aktiviteter{
+    background-color: #A7B9A8;
+    justify-content: center;
+}
+
+.aktiviteter__cards{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.aktiviteter__cards-item{
+    background-color: yellow;
+    gap:10px;
+}
