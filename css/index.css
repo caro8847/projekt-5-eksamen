@@ -26,6 +26,7 @@
     width: 670px;
     display: flex;
     flex-direction: column;
+    border-radius: 5px;
 }
 
 .card__glamping button, .card__eventsal button{
