@@ -1,7 +1,7 @@
 .card{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background: linear-gradient(
     to bottom, 
     #405046 0%, 
@@ -12,10 +12,21 @@
 }
 
 
-.card__glamping{
+.card__glamping, .card__eventsal{
     background-color:#A7B9A8;
+    width: 670px;
+    display: flex;
+    flex-direction: column;
 }
 
-.card__eventsal{
-   background-color:#A7B9A8; 
+.card__glamping button, .card__eventsal button{
+    width: 203px;
+    height: 45px;
+    margin: 20px;
+}
+
+.card__eventsal img, .card__glamping img{
+    border-radius: 20px;
+    padding: 10px;
+    align-self: center
 }
