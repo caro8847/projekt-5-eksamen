@@ -11,6 +11,15 @@
   );
 }
 
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo-front{
+    width: 325px;
+    padding-top: 50px;
+}
 
 .card__glamping, .card__eventsal{
     background-color:#A7B9A8;
