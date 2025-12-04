@@ -53,10 +53,10 @@
 }
 
 .aktiviteter__cards-heading{
-    font-size:20px;
+    font-size:25px;
     font-weight: 900;
 }
 
-.aktiviteter__cards-item p{
-    font-size: 20;
+.aktiviteter__cards-text{
+    font-size:20px;
 }
