@@ -60,3 +60,91 @@
 .aktiviteter__cards-text{
     font-size:20px;
 }
+
+.facilities{
+    text-align: center;
+    margin: 48px 0 ;
+}
+
+.facilities__text{
+    margin:16px 0;
+    font-size: 30px;
+}
+
+.facilities__link{
+    color: #082D10;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.pricing{
+    padding: 64px 32px;
+    background: #F5F5F5;
+    text-align: center;
+    border-radius: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pricing__title{
+    margin-bottom: 48px;
+}
+
+.pricing__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-bottom: 40px;
+}
+
+.price-card{
+    background: #F5F5F5;
+    padding: 40px 24px;
+    border-radius: 12px;
+    border: 2px solid #d0d8d0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.price-card__icon{
+    width: 30px;
+    height: auto;
+    margin: 0 auto 16px;
+    display: block;
+}
+
+.price-card-title{
+    font-size:20px ;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.price-card-text{
+    font-size:20px ;
+    margin-bottom: 16px;
+}
+
+.price-card__price{
+    font-size:20px ;
+    font-weight: 700;
+}
+
+.pricing__note{
+    max-width: 700px;
+    margin: 0 auto 24px auto;
+    font-size: 30px;
+}
+
+.pricing__button{
+    display: inline-block;
+    background: #20351d;
+    color: #F5F5F5;
+    padding: 14px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.pricing__button:hover {
+    background: #1a2c17;
+}
