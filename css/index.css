@@ -40,3 +40,17 @@
     padding: 10px;
     align-self: center
 }
+
+.card__glamping p, h2, .card__eventsal p, h2{
+text-align: left;
+}
+
+.index_text p{
+    line-height: 50px;
+    font-size: 30px;
+    margin: 30px 180px 0px;
+}
+
+.index_text h1{
+    margin-top: 50px;
+}

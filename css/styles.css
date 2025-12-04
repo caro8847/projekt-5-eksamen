@@ -94,6 +94,7 @@ button{
     justify-content: space-between; /* kontakt til venstre, logo til højre */
     padding: 30px;
     flex-wrap: wrap;
+    margin-top: 80px;
 }
 
 .footer_contact a, 
