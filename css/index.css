@@ -2,7 +2,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background: linear-gradient(
+    to bottom, 
+    #405046 0%, 
+    #405046 65%, 
+    #ffff 65%, 
+    #ffff 100%
+  );
 }
+
 
 .card__glamping{
     background-color:#A7B9A8;
