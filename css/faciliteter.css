@@ -1,0 +1,32 @@
+/*Hjælp fra Chat GPT til at få skrift ovenpå hero billede. Link: https://chatgpt.com/share/69319955-cf44-8007-aae6-65349a92849b*/
+
+.hero {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+}
+
+.hero-img img {
+    height: auto;
+    display: block;
+}
+
+.overlap-title {
+    margin-top: -50px;  
+    background: white;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-align: center;  
+}
+
+
+p{
+    line-height: 50px;
+    font-size: 30px;
+    margin: 30px 180px 0px;
+}
+
+h2{
+    margin-top: 50px;
+}
