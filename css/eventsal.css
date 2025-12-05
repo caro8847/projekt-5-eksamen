@@ -225,12 +225,12 @@
 
 .divider__line-left{
     margin-right: 20px;
-    margin-left: 20px;
+    margin-left: 50px;
 }
 
 .divider__line-right{
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 50px;
 }
 
 .divider__icon img{
@@ -305,4 +305,19 @@
 
 .testimonials__nav-next{
     right: 10px;
+}
+
+.testimonials__bullets{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 6px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.testimonials__bullets--active{
+    background-color: #082D10;
 }
