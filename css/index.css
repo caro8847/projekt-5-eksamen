@@ -32,18 +32,33 @@
 .card__glamping button, .card__eventsal button{
     width: 203px;
     height: 45px;
-    margin: 20px;
 }
 
-.card__eventsal img, .card__glamping img{
+.card__eventsal img{
     border-radius: 20px;
-    margin: 25px;
-    align-self: center
+    width: 100%;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+.card__glamping img{
+    border-radius: 20px;
+    width: 100%;
+    align-self: center;
+    margin-top: 20px;
 }
 
 .card__glamping h2, .card__glamping p,
 .card__eventsal h2, .card__eventsal p{
-text-align: left;
+    text-align: left;
+}
+
+.card__glamping p, .card__eventsal p{
+    margin-bottom: 25px;
+}
+
+.card__content{
+    padding: 25px;
 }
 
 .index_text p{
