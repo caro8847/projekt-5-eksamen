@@ -57,12 +57,12 @@ h2{
 
 .divider__line-left{
     margin-right: 20px;
-    margin-left: 20px;
+    margin-left: 50px;
 }
 
 .divider__line-right{
     margin-left: 20px;
-    margin-right: 20px;
+    margin-right: 50px;
 }
 
 .divider__icon img{
