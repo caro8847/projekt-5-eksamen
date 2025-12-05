@@ -38,44 +38,36 @@ h2{
 }
 
 
-.faciliteter div p{
-    margin: 0px;
-    font-size: 15px;
+.faciliteter p{
+    margin: 10px 0px;
+    font-size: 20px;
+    line-height: normal;
+}
+
+.faciliteter__toilet-text{
+    text-align: right;
 }
 
 .faciliteter{
-    display: grid;
-    justify-items: center;
-    grid-template-columns:1fr 1fr 1fr;
-    grid-template-rows:100px auto 100px;
-    grid-template-areas: 
-        "a c d"
-        "a c e"
-        "b c e";
+    display: flex;
+    flex-direction: row;
+    padding: 85px;
+    gap: 60px;
+}
+
+.faciliteter__toilet,
+.faciliteter__kokken{
+    flex: 1;
+}
+
+.faciliteter__kokken{
+    align-content: end;
+}
+
+.faciliteter__lounge{
+    flex: 1.5;
 }
 
 .faciliteter img{
     width: 100%;
-}
-
-.faciliteter__toilet{
-    grid-area: a;
-}
-
-.faciliteter__toilet-text{
-    grid-area: b;
-    width: 100%;
-}
-
-.faciliteter__lounge{
-    grid-area: c;
-}
-
-.faciliteter__kokken-text{
-    grid-area: d;
-    width: 100%;
-}
-
-.faciliteter__kokken{
-    grid-area: e;
 }
