@@ -37,11 +37,12 @@
 
 .card__eventsal img, .card__glamping img{
     border-radius: 20px;
-    padding: 10px;
+    margin: 25px;
     align-self: center
 }
 
-.card__glamping p, h2, .card__eventsal p, h2{
+.card__glamping h2, .card__glamping p,
+.card__eventsal h2, .card__eventsal p{
 text-align: left;
 }
 
