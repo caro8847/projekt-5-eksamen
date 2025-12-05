@@ -26,7 +26,8 @@
 }
 
 
-p{
+
+main p{
     line-height: 50px;
     font-size: 30px;
     margin: 30px 180px 0px;
@@ -34,4 +35,47 @@ p{
 
 h2{
     margin-top: 50px;
+}
+
+
+.faciliteter div p{
+    margin: 0px;
+    font-size: 15px;
+}
+
+.faciliteter{
+    display: grid;
+    justify-items: center;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:100px auto 100px;
+    grid-template-areas: 
+        "a c d"
+        "a c e"
+        "b c e";
+}
+
+.faciliteter img{
+    width: 100%;
+}
+
+.faciliteter__toilet{
+    grid-area: a;
+}
+
+.faciliteter__toilet-text{
+    grid-area: b;
+    width: 100%;
+}
+
+.faciliteter__lounge{
+    grid-area: c;
+}
+
+.faciliteter__kokken-text{
+    grid-area: d;
+    width: 100%;
+}
+
+.faciliteter__kokken{
+    grid-area: e;
 }
