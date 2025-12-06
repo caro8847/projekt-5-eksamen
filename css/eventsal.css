@@ -25,6 +25,7 @@
     text-align: center;  
 }
 
+/* ------------ Intro tekst ------------ */
 
 .intro{
     min-width: 750px;
@@ -43,6 +44,7 @@
     text-align: center;
 }
 
+/* ------------ Aktivitestmuligheder ------------ */
 .aktiviteter__cards{
     display: flex;
     flex-direction: row;
@@ -88,6 +90,7 @@
     font-size:20px;
 }
 
+/* ------------ Faciliteter ------------ */
 .facilities{
     text-align: center;
     margin: 48px 0 ;
@@ -104,6 +107,7 @@
     font-size: 30px;
 }
 
+/* ------------ Prisliste ------------ */
 .pricing{
     position: relative;
     padding: 80px 0px;
@@ -111,7 +115,16 @@
     min-height: 520px;
 }
 
-.background_green-img{
+.discount__badge-img{
+    position: absolute;
+    top: 40px;
+    right: 80px;
+    width: 200px;
+    height: auto;
+    z-index: 3;
+}
+
+.background__green-img{
     position: absolute;
     inset: 0;
     width: 100%;
@@ -120,7 +133,7 @@
     z-index: 0;
 }
 
-.background_white-img{
+.background__white-img{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -209,6 +222,8 @@
     cursor: pointer; 
 }
 
+/* ------------ Linje break ------------ */
+
 .divider{
     display: flex;
     align-items: center;
@@ -238,30 +253,33 @@
     height: auto;
 }
 
+
+/* ------------ Udtagelser ------------ */
+/* Har hentet inspiration fra youtube til billedeslider https://www.youtube.com/watch?v=1CZhGDU5cWM og W3 med blockquote  https://www.w3schools.com/tags/tag_blockquote.asp */
 .testimonials{
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 50px auto;
     position: relative;
 }
 
-.testimonials__title{
+
+.testimonial__title{
     margin-bottom: 30px;
 }
 
-.testimonials__slider{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 30px;
+.testimonials__viewport{
     overflow: hidden;
+    width: 100%;
+}
+
+.testimonials__track{
+    display: flex;
+    gap: 30px;
+    transition: transform 0.5s ease;
 }
 
 .testimonials__slide{
-    opacity: 0;
-    transition: opaciti 0.4s ease;
-}
-
-.testimonials__slide--active{
-    opacity: 1;
+    flex: 0 0 calc(25% - 30px);
 }
 
 
@@ -275,36 +293,46 @@
 .testimonial__text{
     font-size: 20px;
     line-height: 1.5;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .testimonial__author{
     font-weight: 900;
     font-size: 20px;
-    display: block;
 }
 
 .testimonials__nav{
     position: absolute;
-    top: 50%;
+    top: 42%;
     transform: translateY(-50%);
     background: none;
     border: none;
     padding: 10px;
+    font-size: 28px;
     cursor:pointer;
     border-radius: 4px;
 }
 
 .testimonials__nav-prev{
-    left: 10px;
+    left: -40px; 
+    color: #082D10;
 }
 
 .testimonials__nav-next{
-    right: 10px;
+    right: -40px;
+    color: #082D10;
 }
 
 .testimonials__bullets{
     margin-top:20px;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+    white-space: nowrap;
+    margin: 0;
+    z-index: 10;
 }
 
 .testimonials__bullet{
@@ -320,4 +348,85 @@
 
 .testimonials__bullets--active{
     background-color: #082D10;
+}
+
+@media (max-width: 760px){
+
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+
+    .overlap-title{
+        margin-top: -30px;
+        font-size: 30px;
+    }
+
+
+    .intro{
+        min-width: auto;
+        margin: 20px;
+        padding: 0 20px;
+        text-align: left;
+    }
+
+    .intro__text{
+        font-size: 15px;
+    }
+
+    .aktiviteter__cards{
+        flex-direction: column;
+        gap: 15px;
+        margin: 0 10px;
+    }
+
+    .aktiviteter__title{
+        font-size: 25;
+    }
+
+    .aktiviteter__cards-item{
+        width: 100%;
+        min-height: auto;
+    }
+
+    .aktiviteter__cards-heading{
+        font-size:15px ;
+    }
+
+    .aktiviteter__cards-text{
+        font-size: 12px;
+    }
+
+    .facilities__text, .facilities__link{
+        font-size: 15px;
+    }
+
+    .pricing__grid{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+   .pricing__note, .price-card-text, .price-card__price,.price-card-title{
+    font-size: 15px;
+   }
+
+   .discount__badge-img{
+    width: 120px;
+    top: 80px;
+    right: 15px;
+   }
+
+   .background__white-img{
+    width: 95%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   }
+
+   .divider__icon img{
+    width: 30px;
+   }
+
+  
+
 }

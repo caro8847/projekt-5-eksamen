@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Eventsal</title>
+    <meta name="description" content="Hesselgaard Eventsal tilbyder alsidige lokaler til møder, foredrag, mindfulness og kreative workshops. Den perfekte ramme for dit næste arrangement">
+    
+    <link rel="icon" href="img/hesselgaard-logo-green.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/eventsal.css">
     <link rel="stylesheet" href="https://use.typekit.net/qec2dpt.css">
@@ -45,6 +49,11 @@
             </div>
     
             <h1 class="overlap-title">Eventsal</h1>
+            <div>
+                <a href="booking.html">
+                    <button class="button"> Book Eventsal </button>
+                </a>
+            </div>
         </section>
 
         <section class="intro">
@@ -58,7 +67,7 @@
 
 
         <section class="aktiviteter">
-            <h2>Aktivitetsmuligheder</h2>
+            <h2 class="aktiviteter__title">Aktivitetsmuligheder</h2>
 
             <div class="aktiviteter__cards">
 
@@ -105,8 +114,9 @@
 
         <section class="pricing">
 
-            <img src="img/baggrund-pris.jpg" alt="Olivin træ" class="background_green-img">
-            <img src="img/forgrund-pris.jpg" alt="Hvid baggrund" class="background_white-img">
+            <img src="img/rabat-pris.png" alt="Rabat pris" class="discount__badge-img">
+            <img src="img/baggrund-pris.jpg" alt="Olivin træ" class="background__green-img">
+            <img src="img/forgrund-pris.jpg" alt="Hvid baggrund" class="background__white-img">
 
 
             <div class="pricing__inner">
@@ -161,50 +171,48 @@
         <!-- Har hentet inspiration fra youtube til billedeslider https://www.youtube.com/watch?v=1CZhGDU5cWM 
         og W3 med blockquote  https://www.w3schools.com/tags/tag_blockquote.asp -->
         <section class="testimonials">
-            <h2>Udtagelser</h2>
+            <h2 class="testimonial__title">Udtagelser</h2>
 
             <button class="testimonials__nav testimonials__nav-prev">❮</button>
             <button class="testimonials__nav testimonials__nav-next">❯</button>
 
+            <div class="testimonials__viewport">
+                <div class="testimonials__track">
+                
+                    <div class="testimonials__slide testimonials__slide--active">
+                        <blockquote class="testimonial">
+                            <p class="testimonial-text">“Det perfekte sted til ro, nærvær og fordybelse. Vi kommer helt sikkert igen.”</p>
+                            <cite class="testimonial__author">– A. Friis</cite>
+                        </blockquote>
+                    </div>
+                    <div class="testimonials__slide">
+                        <blockquote class="testimonial">
+                            <p class="testimonial-text">“Smukke omgivelser og en virkelig behagelig atmosfære. Vi følte os hjemme fra start.”</p>
+                            <cite class="testimonial__author">– M. Larsen</cite>
+                        </blockquote>
+                    </div>
+                    <div class="testimonials__slide">
+                        <blockquote class="testimonial">
+                            <p class="testimonial-text">“Rummelig sal, god akustik og fantastisk service. Kan varmt anbefales.”</p>
+                            <cite class="testimonial__author">– T. Holm</cite>
+                        </blockquote>
+                    </div>
+                    <div class="testimonials__slide">
+                        <blockquote class="testimonial">
+                            <p class="testimonial-text">“Professionelle rammer og en varm velkomst. Alt spillede fra start til slut.”</p>
+                            <cite class="testimonial__author">– L. Jensen</cite>
+                        </blockquote>
+                    </div>
+                    <div class="testimonials__slide">
+                        <blockquote class="testimonial">
+                            <p class="testimonial-text">“Fantastiske faciliteter og fleksible rammer. Eventsalen løftede vores arrangement til et helt nyt niveau”</p>
+                            <cite class="testimonial__author">– S. Madsen</cite>
+                        </blockquote>
+                    </div>
 
-            <div class="testimonials__slider">
-                <div class="testimonials__slide testimonials__slide--active">
-                    <blockquote class="testimonial">
-                        <p class="testimonial-text">“Det perfekte sted til ro, nærvær og fordybelse. Vi kommer helt sikkert igen.”</p>
-                        <cite class="testimonial__author">– A. Friis</cite>
-                    </blockquote>
                 </div>
-
-                <div class="testimonials__slide">
-                    <blockquote class="testimonial">
-                        <p class="testimonial-text">“Smukke omgivelser og en virkelig behagelig atmosfære. Vi følte os hjemme fra start.”</p>
-                        <cite class="testimonial__author">– M. Larsen</cite>
-                    </blockquote>
-                </div>
-
-                <div class="testimonials__slide">
-                    <blockquote class="testimonial">
-                        <p class="testimonial-text">“Rummelig sal, god akustik og fantastisk service. Kan varmt anbefales.”</p>
-                        <cite class="testimonial__author">– T. Holm</cite>
-                    </blockquote>
-                </div>
-
-                <div class="testimonials__slide">
-                    <blockquote class="testimonial">
-                        <p class="testimonial-text">“Professionelle rammer og en varm velkomst. Alt spillede fra start til slut.”</p>
-                        <cite class="testimonial__author">– L. Jensen</cite>
-                    </blockquote>
-                </div>
-
-                <div class="testimonials__slide">
-                    <blockquote class="testimonial">
-                        <p class="testimonial-text">“Fantastiske faciliteter og fleksible rammer. Eventsalen løftede vores arrangement til et helt nyt niveau”</p>
-                        <cite class="testimonial__author">– S. Madsen</cite>
-                    </blockquote>
-                </div>
-
             </div>
-           
+
             <div class="testimonials__bullets">
                 <span class="testimonials__bullet testimonials__bullet--active"></span>
                 <span class="testimonials__bullet"></span>
@@ -225,22 +233,22 @@
             <div class="footer_icon">
                 <div class="footer_socials">
                     <a href="https://www.instagram.com/hesselgaard_glamping/" class="footer_socials.ig" target="_blank" rel="noopener">
-                        <img src="img/instagram.svg">
+                        <img src="img/instagram.svg" alt="Instagram Logo">
                     </a>
 
                     <a href="https://www.facebook.com/profile.php?id=100093300235879" class="footer_socials.fb" target="_blank" rel="noopener">
-                        <img src="img/facebook.svg">
+                        <img src="img/facebook.svg" alt="Facebook logo">
                     </a>
                 </div>
                 <div class="footer_logo">
                     <a href="index.html">
-                        <img src="img/hesselgaard-logo-green.svg">
+                        <img src="img/hesselgaard-logo-green.svg" alt="Hesselgaard logo">
                     </a>
                 </div>
             </div>
         </div>
         <div class="footer_copyright">
-            <img src="img/copyright.svg">
+            <img src="img/copyright.svg" alt="Copyright">
             <p>All Rights Reserved</p>
             <p>CVR: 41414359</p>
         </div>
