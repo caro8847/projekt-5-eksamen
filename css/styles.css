@@ -45,6 +45,15 @@ button{
     text-align: center;
     font-size: 25px;
 }
+
+.button:hover{
+    border-color: #082D10;
+    color: #082D10;
+    background-color: #F5F1E7;
+
+}
+
+
 /*----------CSS TIL HEADER----------*/
 .header{
     background-color: #405046;

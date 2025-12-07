@@ -42,17 +42,21 @@
             </ul>
         </nav>
     </header>
+    
     <main>
         <h1>Book din næste reservation</h1>
+       
         <section class="booking">
-            <div class="calendar-wrapper">
+            <div class="booking__calendar-wrapper">
+                
                 <div class="calendar">
-                    <div class="month-header">
-                        <div class="arrow">‹</div>
-                        <span>August 2025</span>
-                        <div class="arrow">›</div>
+                    <div class="calendar__header">
+                        <div class="calendar__arrow calendar__arrow--left">‹</div>
+                        <span class="calendar__month">August 2025</span>
+                        <div class="calendar__arrow calendar__arrow--right">›</div>
                     </div>
-                    <div class="weekdays">
+
+                    <div class="calendar__weekdays">
                         <div>M</div>
                         <div>T</div>
                         <div>O</div>
@@ -61,8 +65,10 @@
                         <div>L</div>
                         <div>S</div>
                     </div>
-                    <div class="divider"></div>
-                    <div class="days">
+
+                    <div class="calendar__divider"></div>
+
+                    <div class="calendar__days">
                         <div></div><div></div><div></div><div></div><div>1</div><div>2</div><div>3</div>
                         <div>4</div><div>5</div><div>6</div><div>7</div><div>8</div><div>9</div><div>10</div>
                         <div>11</div><div>12</div><div>13</div><div>14</div><div>15</div><div>16</div><div>17</div>
@@ -71,26 +77,51 @@
                     </div>
                 </div>
             </div>
-            <div class="booking__right">
-                <div class="booking__right-book">
-                    <h3>Sådan booker du</h3>
-                    <p>Vælg en dato i kalenderen og indtast dit ønskede tidspunkt. Når du har sendt din reservation, modtager du en bekræftelse på mail. Vi glæder os til at byde dig velkommen!</p>
+
+            <div class="booking__info">
+                <div class="booking__box">
+                    <h3 class="booking__box-title">Sådan booker du</h3>
+                    <p class="booking__box-text">Vælg en dato i kalenderen og indtast dit ønskede tidspunkt. Når du har sendt din reservation, modtager du en bekræftelse på mail. Vi glæder os til at byde dig velkommen!</p>
                 </div>
-                <div class="booking__right-tid">
-                    <h3>Vælg tidspunkt</h3>
+
+                <div class="booking__box">
+                    <h3 class="booking__box-title">Vælg tidspunkt</h3>
+
+                    <div class="booking__tid">
+                        <label for="starttid">Start</label>
+                        <input type="time" id="starttid">
+                        
+                        <label for="sluttid">Slut</label>
+                        <input type="time" id="sluttid">
+
+                        <button>Book</button>
+                    </div>
+
                 </div>
+                
             </div>
         </section>
-        <section class="beliggenhed">
-            <h2>Find vej til Hesselgaard</h2>
-            <div>
-                <img>
-                <div>
-                    <img>
-                    <p>Blæsenborgvej 76, 5380 Dalby</p>
-                    <a href="https://maps.google.com/?q=Bl%C3%A6senborgvej+76,+5380+Dalby" target="_blank" rel="noopener">Se rutevejledning ></a>
+        
+        <!-- Hentet inspiration til google kort fra youtube https://www.youtube.com/watch?v=4U_AAGHzTok -->
+        <section class="location">
+            <h2 class="location__title">Find vej til Hesselgaard</h2>
+            
+            <div class="location__grid">
+                <div class="location__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2259.6933218415484!2d10.695785407656855!3d55.50286915355225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464d108343e2762f%3A0xec17a29601dc9146!2sBl%C3%A6senborgvej%2076%2C%205380%20Dalby!5e0!3m2!1sda!2sdk!4v1765069295587!5m2!1sda!2sdk" 
+                    width="800" height="600" 
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            
+
+                <div class="location__info">
+                    <img src="img/booking-pin.svg"  class="location__pin" alt="Placerings nål">
+                    <p class="location__address">Blæsenborgvej 76, 5380 Dalby</p>
+                    <a class="location__link" href="https://maps.google.com/?q=Bl%C3%A6senborgvej+76,+5380+Dalby" target="_blank" rel="noopener">Se rutevejledning</a>
                 </div>
             </div>
+
         </section>
     </main>
     <footer class="footer">
