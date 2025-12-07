@@ -103,3 +103,43 @@ h2{
 .faciliteter img{
     width: 100%;
 }
+
+
+@media (max-width: 1355px){
+    .faciliteter{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .faciliteter__lounge{
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+
+    .faciliteter__kokken{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .faciliteter__toilet{
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .faciliteter__toilet-text,
+    .faciliteter__kokken-tekst{
+        grid-column: 1 /;
+    }
+}
+
+@media (max-width: 760px){
+     main p, .faciliteter p{
+        font-size: 15px;
+    }
+
+    .udstyr{
+        background-color: #A7B9A850;
+        padding: 30px;
+    }
+}
