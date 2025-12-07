@@ -143,7 +143,7 @@
     height: 80%;
     object-fit: cover;
     z-index: 1;
-    border-radius: 12;
+    border-radius: 12px;
 }
 
 .pricing__inner{
@@ -255,7 +255,8 @@
 
 
 /* ------------ Udtagelser ------------ */
-/* Har hentet inspiration fra youtube til billedeslider https://www.youtube.com/watch?v=1CZhGDU5cWM og W3 med blockquote  https://www.w3schools.com/tags/tag_blockquote.asp */
+/* Har hentet inspiration fra youtube til billedeslider https://www.youtube.com/watch?v=1CZhGDU5cWM og W3 https://www.w3schools.com/howto/howto_js_slideshow.asp 
+W3 med blockquote  https://www.w3schools.com/tags/tag_blockquote.asp */
 .testimonials{
     max-width: 1200px;
     margin: 50px auto;
@@ -276,10 +277,12 @@
     display: flex;
     gap: 30px;
     transition: transform 0.5s ease;
+    align-items: stretch;
 }
 
 .testimonials__slide{
     flex: 0 0 calc(25% - 30px);
+    display: flex;
 }
 
 
@@ -293,7 +296,7 @@
     justify-content: space-between;
 }
 
-.testimonial__text{
+.testimonial__text {
     text-align: center;
     font-size: 20px;
     line-height: 2;
@@ -386,7 +389,7 @@
     }
 
     .aktiviteter__title{
-        font-size: 25;
+        font-size: 25px;
     }
 
     .aktiviteter__cards-item{
@@ -396,6 +399,10 @@
 
     .aktiviteter__cards-heading{
         font-size:15px ;
+    }
+
+    .facilities__title{
+        font-size: 25px;
     }
 
     .aktiviteter__cards-text{
@@ -409,6 +416,11 @@
     .pricing__grid{
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+
+    .pricing__title{
+        margin-top: 50px;
+        font-size: 25px;
     }
 
    .pricing__note, .price-card-text, .price-card__price,.price-card-title{
@@ -432,12 +444,24 @@
     width: 30px;
    }
 
+   .testimonial__title{
+    font-size: 25px;
+   }
+
    .testimonials__slide{
     flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+   }
+
+   .testimonial{
+    max-width: 70%;
+    margin: 0 auto;
+    min-width: 250px;
    }
 
    .testimonial__text, .testimonial__author{
-    font-size: 17;
+    font-size: 17px;
    }
 
    .testimonials__nav-next{

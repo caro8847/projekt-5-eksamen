@@ -171,6 +171,7 @@ button{
         display: block;
     }
 
+
     .footer_icon{
         display: flex;
         flex-direction: column-reverse;

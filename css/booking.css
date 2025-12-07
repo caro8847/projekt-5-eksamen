@@ -5,6 +5,7 @@
     margin: 0 50px;
 }
 
+/* Har hentet inspiration fra W3 schools til kalenderen https://www.w3schools.com/howto/howto_css_calendar.asp  */
 .booking__calendar-wrapper {
     border: 2px solid #A7B9A8;
     padding: 15px;
@@ -135,9 +136,14 @@
 
 @media (max-width: 760px){
     
+    .booking__title{
+        font-size: 25px;
+    }
+
     .booking{
         flex-direction: column;
-        margin: 0 20px;
+        margin: 0 10px;
+        gap: 16px;
     }
 
     .booking__box-text{
@@ -146,15 +152,36 @@
 
     .booking__calendar-wrapper{
         width: 100%;
-        max-width: 100%;
+        max-width: none;
+        box-sizing: border-box;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .calendar{
+        width:100% ;
+        box-sizing: border-box;
     }
     
     .location{
         margin: 20px;
     }
 
+    .location__address{
+        font-size: 15px;
+    }
+
+    .location__info{
+        padding: 20px 10px 40px;
+    }
+
+    .location__title{
+        font-size: 25px;
+    }
+
     .location__grid{
         grid-template-columns: 1fr;
+
     }
 
     .location__map iframe{

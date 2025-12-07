@@ -134,7 +134,7 @@ h2{
 }
 
 @media (max-width: 760px){
-     main p, .faciliteter p{
+    main p, .faciliteter p{
         font-size: 15px;
     }
 
