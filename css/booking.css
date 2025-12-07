@@ -78,7 +78,7 @@
 .booking__box{
     padding: 20px;
     border-radius: 5px;
-    background-color: #A7B9A8;
+    background-color: #A7B9A850;
 }
 
 .booking__box-text{
@@ -88,7 +88,7 @@
 
 /* Hentet inspiration til google kort fra youtube https://www.youtube.com/watch?v=4U_AAGHzTok */
 .location{
-    background: #A7B9A8;
+    background: #A7B9A850;
     margin: 40px 50px;
     padding: 30px;
     border-radius: 5px;
