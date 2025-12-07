@@ -108,29 +108,51 @@ h2{
 @media (max-width: 1355px){
     .faciliteter{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        gap: 5%
     }
 
     .faciliteter__lounge{
         grid-column: 1;
         grid-row: 1 / span 2;
+        align-content: center;
     }
 
-    .faciliteter__kokken{
+    .faciliteter__kokken-img{
         grid-column: 2;
         grid-row: 1;
     }
 
-    .faciliteter__toilet{
+    .faciliteter__toilet-img{
         grid-column: 2;
         grid-row: 2;
     }
 
-    .faciliteter__toilet-text,
-    .faciliteter__kokken-tekst{
-        grid-column: 1 /;
+   .faciliteter__kokken-text{
+        grid-column: 1 / span 2;
+        grid-row: 3;
     }
+
+     .faciliteter__toilet-text{
+        grid-column: 1 / span 2;
+        grid-row: 4;
+        text-align: left;
+     }
+
+    .faciliteter__kokken,
+    .faciliteter__toilet{
+        display: contents;
+    }
+
+    main p{
+        margin: 2% 10% 0%;
+    }
+
+    .faciliteter p{
+        font-size: 30px;
+    }
+
 }
 
 @media (max-width: 760px){
