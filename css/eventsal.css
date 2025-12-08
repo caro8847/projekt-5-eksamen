@@ -446,7 +446,8 @@ W3 med blockquote  https://www.w3schools.com/tags/tag_blockquote.asp */
 
    .background__white-img{
     width: 95%;
-    top: 50%;
+    height: 85%;
+    top: 51%;
     left: 50%;
     transform: translate(-50%, -50%);
    }
