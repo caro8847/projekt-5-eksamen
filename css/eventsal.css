@@ -362,6 +362,7 @@ W3 med blockquote  https://www.w3schools.com/tags/tag_blockquote.asp */
 @media (max-width: 1355px){
     main p{
         margin: 2% 10% 0%;
+        line-height: 40px;
     }
 }
 
