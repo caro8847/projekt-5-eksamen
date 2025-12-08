@@ -172,7 +172,6 @@
         font-size: 25px;
     }
 
-
     .booking{
         flex-direction: column;
         margin: 0 10px;
@@ -188,11 +187,26 @@
     }
 
     .booking__tid label{
+        margin-top: 10px;
         display: inline-flex;
         font-size: 15px;
     }
 
+    .booking__tid{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        flex-wrap: nowrap;
+    }
+
+    .booking__tid .button{
+        margin-left: 0;
+        margin-top:10px ;
+    }
+
     
+
 
     .booking__calendar-wrapper{
         width: 100%;
