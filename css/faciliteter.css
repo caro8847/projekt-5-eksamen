@@ -147,7 +147,7 @@ h2{
 
     main p{
         margin: 2% 10% 0%;
-        line-height: 30px;
+        line-height: 50px;
     }
 
     .faciliteter p{
@@ -160,6 +160,7 @@ h2{
 @media (max-width: 760px){
      main p, .faciliteter p{
         font-size: 15px;
+        line-height: 30px;
     }
 
     .udstyr{

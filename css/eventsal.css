@@ -30,12 +30,13 @@
 .intro{
     min-width: 750px;
     text-align: left;
-    margin: 30px 180px 0px;
+
 }
 
 .intro__text{
-    font-size:30px;
     line-height: 50px;
+    font-size: 30px;
+    margin: 30px 180px 0px;
 }
 
 .aktiviteter{
@@ -97,8 +98,9 @@
 }
 
 .facilities__text{
-    margin:16px 0;
+    line-height: 50px;
     font-size: 30px;
+    margin: 30px 180px 0px;
 }
 
 .facilities__link{
@@ -360,9 +362,9 @@ W3 med blockquote  https://www.w3schools.com/tags/tag_blockquote.asp */
 }
 
 @media (max-width: 1355px){
-    main p{
+    .intro__text, .facilities__text{
         margin: 2% 10% 0%;
-        line-height: 40px;
+        line-height: 50px;
     }
 }
 
@@ -388,6 +390,7 @@ W3 med blockquote  https://www.w3schools.com/tags/tag_blockquote.asp */
 
     .intro__text{
         font-size: 15px;
+        line-height: 30px;
     }
 
     .aktiviteter__cards{
@@ -419,6 +422,7 @@ W3 med blockquote  https://www.w3schools.com/tags/tag_blockquote.asp */
 
     .facilities__text, .facilities__link{
         font-size: 15px;
+        line-height: 30px;
     }
 
     .pricing__grid{
