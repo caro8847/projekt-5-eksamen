@@ -187,6 +187,13 @@
         font-size: 15px;
     }
 
+    .booking__tid label{
+        display: inline-flex;
+        font-size: 15px;
+    }
+
+    
+
     .booking__calendar-wrapper{
         width: 100%;
         max-width: none;
