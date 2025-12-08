@@ -73,9 +73,11 @@
 }
 
 @media (max-width: 1355px){
-    main p{
+    .index_text p{
         margin: 2% 10% 0%;
+        line-height: 30px;
     }
+    
 }
 
 @media (max-width: 760px){
@@ -114,8 +116,6 @@
 
     .index_text p{
         font-size: 15px;
-        line-height: 32px;
-        margin: 20px 20px 0;
     }
 
     .index_text h1{
