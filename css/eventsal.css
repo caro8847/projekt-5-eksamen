@@ -359,6 +359,12 @@ W3 med blockquote  https://www.w3schools.com/tags/tag_blockquote.asp */
     background-color: #082D10;
 }
 
+@media (max-width: 1355px){
+    main p{
+        margin: 2% 10% 0%;
+    }
+}
+
 @media (max-width: 760px){
 
     .hero-img img{

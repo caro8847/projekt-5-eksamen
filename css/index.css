@@ -72,6 +72,12 @@
     margin-top: 50px;
 }
 
+@media (max-width: 1355px){
+    main p{
+        margin: 2% 10% 0%;
+    }
+}
+
 @media (max-width: 760px){
     .card{
         flex-direction: row;
