@@ -54,6 +54,7 @@ h2{
     width: 203px;
     height: 45px;
     text-decoration: none;
+    display: inline-block;
 }
 
 .button:hover{

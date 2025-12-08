@@ -163,4 +163,12 @@ h2{
         background-color: #A7B9A850;
         padding: 30px;
     }
+
+    h1{
+        font-size: 30px;
+    }
+
+    h2{
+        font-size: 25px;
+    }
 }
