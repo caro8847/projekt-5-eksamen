@@ -152,6 +152,8 @@ h2{
     .faciliteter p{
         font-size: 30px;
     }
+
+
 }
 
 @media (max-width: 760px){
@@ -163,4 +165,6 @@ h2{
         background-color: #A7B9A850;
         padding: 30px;
     }
+
+    
 }
