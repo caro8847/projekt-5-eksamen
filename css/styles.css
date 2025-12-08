@@ -15,6 +15,11 @@ body, html a,p{
     font-style: normal;
 }
 
+p, h3, h4{
+    color: #3D3B3B;
+
+}
+
 main{
     flex: 1;
 }
@@ -25,6 +30,7 @@ h1{
     font-style: normal;
     text-align: center;
     font-size: 64px;
+    color: #082D10;
 }
 
 h2{
@@ -33,9 +39,10 @@ h2{
     font-style: normal;
     text-align: center;
     font-size: 60px;
+    color: #082D10;
 }
 
-button{
+.button{
     border-radius: 10px;
     background-color: #082D10;
     color: #F5F1E7;
@@ -171,6 +178,9 @@ button{
         display: block;
     }
 
+    .button{
+        font-size:18px ;
+    }
 
     .footer_icon{
         display: flex;
