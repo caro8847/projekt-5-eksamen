@@ -321,11 +321,13 @@ W3 med blockquote  https://www.w3schools.com/tags/tag_blockquote.asp */
 }
 
 .testimonials__nav-prev{
+    top: 225px;
     left: -40px; 
     color: #082D10;
 }
 
 .testimonials__nav-next{
+    top: 225px;
     right: -40px;
     color: #082D10;
 }
