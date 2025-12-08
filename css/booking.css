@@ -5,6 +5,11 @@
     margin: 0 50px;
 }
 
+.booking__title{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
 /* Har hentet inspiration fra W3 schools til kalenderen https://www.w3schools.com/howto/howto_css_calendar.asp  */
 .booking__calendar-wrapper {
     border: 2px solid #A7B9A8;
@@ -64,7 +69,7 @@
     margin: 2px 0;
 }
 
-.days div:hover{
+.calendar__days div:hover{
     font-weight: 900;
 }
 
@@ -82,10 +87,29 @@
     background-color: #A7B9A850;
 }
 
+.booking__box-title{
+    font-size: 32px;
+    font-weight: 900px;
+}
+
 .booking__box-text{
     font-size: 30px;
 }
 
+.booking__tid{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.booking__tid label{
+    display: inline-flex;
+    font-size: 30px;
+}
+
+.booking__tid .button{
+    margin-left: 40px;
+}
 
 /* Hentet inspiration til google kort fra youtube https://www.youtube.com/watch?v=4U_AAGHzTok */
 .location{
@@ -125,12 +149,13 @@
 }
 
 .location__address{
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 600;
 }
 
 .location__link{
     color: #2f4638;
+    font-size: 25px;
     font-weight: 600;
 }
 
@@ -140,10 +165,15 @@
         font-size: 25px;
     }
 
+
     .booking{
         flex-direction: column;
         margin: 0 10px;
         gap: 16px;
+    }
+
+    .booking__box-title{
+        font-size: 25px;
     }
 
     .booking__box-text{
@@ -168,6 +198,10 @@
     }
 
     .location__address{
+        font-size: 15px;
+    }
+
+    .location__link{
         font-size: 15px;
     }
 
