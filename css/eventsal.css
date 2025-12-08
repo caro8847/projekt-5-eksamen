@@ -216,11 +216,9 @@
 .pricing__inner a{
     display: block;
     text-align: center;
+    cursor: pointer;
 }
 
-.pricing__inner button{
-    cursor: pointer; 
-}
 
 /* ------------ Linje break ------------ */
 
