@@ -95,7 +95,6 @@
 .booking__box-text{
     line-height: 50px;
     font-size: 30px;
-    margin: 30px 180px 0px;
 }
 
 .booking__tid{
@@ -163,7 +162,6 @@
 
 @media (max-width: 1355px){
     .booking__box-text{
-        margin: 2% 10% 0%;
         line-height: 50px;
     }
 }
