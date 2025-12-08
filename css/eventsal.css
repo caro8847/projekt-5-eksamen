@@ -458,6 +458,11 @@ W3 med blockquote  https://www.w3schools.com/tags/tag_blockquote.asp */
     font-size: 25px;
    }
 
+   .testimonials__nav{
+    z-index: 20;
+    pointer-events: auto;
+   }
+
    .testimonials__slide{
     flex: 0 0 100%;
     display: flex;
