@@ -105,6 +105,10 @@ h2{
     text-decoration-thickness:1.5px ;
 }
 
+.mobile-nav-toggle{
+    display: none;
+}
+
 /*----------CSS TIL FOOTER----------*/
 
 .footer_top{
@@ -220,10 +224,22 @@ h2{
 
     .header__menu{
         position: fixed;
+        z-index: 1000;
         inset: 0 0 0 30%;
         background-color: #405046;
         flex-direction: column;
         padding: 25% 15%;
         gap: 10%;
+    }
+
+    .mobile-nav-toggle{
+        display: block;
+        position: absolute;
+        z-index: 9999;
+        background: url('.../img/burger-menu.svg');
+        width: 1rem;
+        aspect-ratio: 1;
+        top: 2rem;
+        right: 2rem;
     }
 }
