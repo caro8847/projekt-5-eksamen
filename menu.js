@@ -1,6 +1,6 @@
 //Caroline
-//https://www.youtube.com/watch?v=HbBMp6yUXO0 - udførelse af burger-menu
-//https://chatgpt.com/share/69387a5d-bdc8-800a-92fc-97ed55f5c0e8 - animation
+//Udførelse af burger-menu (css og js) - https://www.youtube.com/watch?v=HbBMp6yUXO0
+//Animation (html, css og js)- https://chatgpt.com/share/69387a5d-bdc8-800a-92fc-97ed55f5c0e8
 
 console.log("It's working")
 
