@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/eventsal.css">
     <link rel="stylesheet" href="https://use.typekit.net/qec2dpt.css">
+    <script src="menu.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -22,9 +23,13 @@
                 </a>
             </div>
 
-            <button class="mobile-nav-toggle"></button>
+            <button class="mobile-nav-toggle">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
 
-            <ul class="header__menu">                
+            <ul data-visible="false" class="header__menu">                
                 <li class="header__item header__item--selected">
                     <a href="eventsal.html" class="header__link">Eventsal</a>
                 </li>
