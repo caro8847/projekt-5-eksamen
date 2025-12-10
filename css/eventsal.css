@@ -263,6 +263,9 @@ W3 med blockquote  https://www.w3schools.com/tags/tag_blockquote.asp */
     position: relative;
 }
 
+.testimonials input[type="radio"]{
+    display: none;
+}
 
 .testimonial__title{
     margin-bottom: 30px;
@@ -319,6 +322,7 @@ W3 med blockquote  https://www.w3schools.com/tags/tag_blockquote.asp */
     font-size: 28px;
     cursor:pointer;
     border-radius: 4px;
+    display: none;
 }
 
 .testimonials__nav-prev{
@@ -356,9 +360,64 @@ W3 med blockquote  https://www.w3schools.com/tags/tag_blockquote.asp */
     transition: background-color 0.3s;
 }
 
-.testimonials__bullets--active{
+#slider1:checked ~ .nav-prev-1,
+#slider1:checked ~ .nav-next-1{
+    display: block;
+}
+
+#slider2:checked ~ .nav-prev-2,
+#slider2:checked ~ .nav-next-2{
+    display: block;
+}
+
+#slider3:checked ~ .nav-prev-3,
+#slider3:checked ~ .nav-next-3{
+    display: block;
+}
+
+#slider4:checked ~ .nav-prev-4,
+#slider4:checked ~ .nav-next-4{
+    display: block;
+}
+
+#slider5:checked ~ .nav-prev-5,
+#slider5:checked ~ .nav-next-5{
+    display: block;
+}
+
+#slider1:checked ~ .testimonials__viewport .testimonials__track {
+    transform: translateX(0%);
+}
+
+#slider2:checked ~ .testimonials__viewport .testimonials__track {
+    transform: translateX(-25%);
+}
+
+#slider3:checked ~ .testimonials__viewport .testimonials__track {
+    transform: translateX(-50%);
+}
+
+#slider4:checked ~ .testimonials__viewport .testimonials__track {
+    transform: translateX(-75%);
+}
+
+#slider5:checked ~ .testimonials__viewport .testimonials__track {
+    transform: translateX(-100%);
+}
+
+#slider1:checked ~ .testimonials__bullets label[for="slider1"],
+#slider2:checked ~ .testimonials__bullets label[for="slider2"],
+#slider3:checked ~ .testimonials__bullets label[for="slider3"],
+#slider4:checked ~ .testimonials__bullets label[for="slider4"],
+#slider5:checked ~ .testimonials__bullets label[for="slider5"] {
     background-color: #082D10;
 }
+
+.testimonials__bullet{
+    background: #F5F5F5;
+    transition: background-color 0.3s;
+}
+
 
 @media (max-width: 1355px){
     .intro__text, .facilities__text{
@@ -463,8 +522,15 @@ W3 med blockquote  https://www.w3schools.com/tags/tag_blockquote.asp */
     pointer-events: auto;
    }
 
+   .testimonials__track{
+    display: flex;
+    width: 500%;
+    gap: 0;
+    transition: transform 0.5s ease;
+   }
+
    .testimonials__slide{
-    flex: 0 0 100%;
+    flex: 0 0 20%;
     display: flex;
     justify-content: center;
    }
@@ -488,8 +554,23 @@ W3 med blockquote  https://www.w3schools.com/tags/tag_blockquote.asp */
    }
 
    .testimonials__bullets{
-    bottom: -20px;
+    bottom: -30px;
    }
   
+   #slider1:checked ~ .testimonials__viewport .testimonials__track {
+    transform: translateX(0%);
+    }
+    #slider2:checked ~ .testimonials__viewport .testimonials__track {
+    transform: translateX(-20%);
+    }
+    #slider3:checked ~ .testimonials__viewport .testimonials__track {
+    transform: translateX(-40%);
+    }
+    #slider4:checked ~ .testimonials__viewport .testimonials__track {
+    transform: translateX(-60%);
+    }
+    #slider5:checked ~ .testimonials__viewport .testimonials__track {
+    transform: translateX(-80%);
+    }
 
 }
