@@ -2,9 +2,6 @@
 
 console.log('It works:)')
 
-
-
-
 const socials = [
     {
         href:  "https://www.instagram.com/hesselgaard_glamping/",
@@ -33,7 +30,7 @@ function addSocials() {
 
         const link = document.createElement ("a");
         link.href = social.href;
-        link.target = "blank";
+        link.target = "_blank";
         link.rel = "noopener";
         link.classList.add("footer_socials-link");
 
