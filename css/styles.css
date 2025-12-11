@@ -226,6 +226,10 @@ h2{
         height: auto;
     }
 
+
+
+/*https://www.youtube.com/watch?v=HbBMp6yUXO0 - hjælp til styleing fra video*/
+/*https://chatgpt.com/share/69387a5d-bdc8-800a-92fc-97ed55f5c0e8 - hjælp til styling og animation fra ChatGPT*/
     .header__menu{
         position: fixed;
         z-index: 1000;
