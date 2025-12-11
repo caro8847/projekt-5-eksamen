@@ -2,7 +2,7 @@
 
 console.log('It works:)')
 
-const footer = document.getElementById('footer-right');
+
 
 
 const socials = [
