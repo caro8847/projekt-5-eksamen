@@ -35,7 +35,7 @@
 .intro__text{
     line-height: 50px;
     font-size: 30px;
-    margin: 30px 180px 0px;
+    margin: 30px 180px 30px;
 }
 
 .aktiviteter{
@@ -427,7 +427,7 @@ W3 med blockquote  https://www.w3schools.com/tags/tag_blockquote.asp */
 
 @media (max-width: 1355px){
     .intro__text, .facilities__text{
-        margin: 2% 10% 0%;
+        margin: 2% 10% 2%;
         line-height: 50px;
     }
 }
