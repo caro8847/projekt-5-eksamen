@@ -503,8 +503,8 @@ W3 med blockquote  https://www.w3schools.com/tags/tag_blockquote.asp */
 
    .discount__badge-img{
     width: 120px;
-    top: 80px;
-    right: 15px;
+    top: 0px;
+    right: 7%;
    }
 
    .background__white-img{
@@ -513,6 +513,7 @@ W3 med blockquote  https://www.w3schools.com/tags/tag_blockquote.asp */
     top: 51%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: block;
    }
 
    .divider__icon img{
