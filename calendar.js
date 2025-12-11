@@ -2,6 +2,8 @@
 
 /* Har hentet inspiration ud fra denne side https://www.geeksforgeeks.org/javascript/how-to-design-a-simple-calendar-using-javascript/ */
 
+console.log("It's working")
+
 const calendarDays = document.querySelector('.calendar__days');
 const calendarMonth = document.querySelector('.calendar__month');
 const prevArrow = document.querySelector('.calendar__arrow--left');
@@ -17,50 +19,30 @@ const months = [
 ];
 
 function renderCalendar(month, year) {
-    calendarDays.innerHTML = ""; // ryd tidligere dage
-
-    // sæt måned og år i header
+    calendarDays.innerHTML = "";
     calendarMonth.textContent = `${months[month]} ${year}`;
-
-    // Find første dag i måneden og antal dage
-    const firstDay = new Date(year, month, 1).getDay(); // 0 = søndag
+  
+    const firstDay = new Date(year, month, 1).getDay();
     const daysInMonth = new Date(year, month + 1, 0).getDate();
-
-    // Juster, så ugen starter med mandag
-    let startDay = firstDay === 0 ? 6 : firstDay - 1;
-
-    // tomme pladser før den første dag
-    for (let i = 0; i < startDay; i++) {
-        const emptyDiv = document.createElement('div');
-        calendarDays.appendChild(emptyDiv);
-    }
-
-    // fyld dagene
+    const startDay = firstDay === 0 ? 6 : firstDay - 1;
+  
+    for (let i = 0; i < startDay; i++) calendarDays.appendChild(document.createElement('div'));
+  
     for (let day = 1; day <= daysInMonth; day++) {
-        const dayDiv = document.createElement('div');
-        dayDiv.textContent = day;
-        calendarDays.appendChild(dayDiv);
+      const dayDiv = document.createElement('div');
+      dayDiv.textContent = day;
+      calendarDays.appendChild(dayDiv);
     }
 }
-
-// pile funktionalitet
-prevArrow.addEventListener('click', () => {
-    currentMonth--;
-    if (currentMonth < 0) {
-        currentMonth = 11;
-        currentYear--;
-    }
+  
+function changeMonth(offset) {
+    currentMonth += offset;
+    if (currentMonth > 11) { currentMonth = 0; currentYear++; }
+    if (currentMonth < 0) { currentMonth = 11; currentYear--; }
     renderCalendar(currentMonth, currentYear);
-});
-
-nextArrow.addEventListener('click', () => {
-    currentMonth++;
-    if (currentMonth > 11) {
-        currentMonth = 0;
-        currentYear++;
-    }
-    renderCalendar(currentMonth, currentYear);
-});
-
-// initial render
-renderCalendar(currentMonth, currentYear);
+}
+  
+prevArrow.addEventListener('click', () => changeMonth(-1));
+nextArrow.addEventListener('click', () => changeMonth(1));
+  
+renderCalendar(currentMonth, currentYear); 
