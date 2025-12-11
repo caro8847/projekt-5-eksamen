@@ -28,12 +28,15 @@ function addSocials() {
         return;
     }
 
-    socials.forEach((social) => {
-        const link = document.createElement("a");
+    for (let i = 0; i < socials.length; i++) {
+        const social = socials[i];
+
+        const link = document.createElement ("a");
         link.href = social.href;
-        link.target = "_blank";
+        link.target = "blank";
         link.rel = "noopener";
         link.classList.add("footer_socials-link");
+
         if (social.class) {
             link.classList.add(social.class);
         }
@@ -44,7 +47,7 @@ function addSocials() {
 
         link.appendChild(icon);
         socialsContainer.appendChild(link);
-    });
+    }
 }
 
 document.addEventListener("DOMContentLoaded", addSocials);
