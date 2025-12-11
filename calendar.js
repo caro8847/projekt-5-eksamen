@@ -1,6 +1,7 @@
 /* Freja */
 
-/* Har hentet inspiration ud fra denne side https://www.geeksforgeeks.org/javascript/how-to-design-a-simple-calendar-using-javascript/ */
+/* Har hentet inspiration ud fra denne side https://www.geeksforgeeks.org/javascript/how-to-design-a-simple-calendar-using-javascript/ 
+og  CHAT https://chatgpt.com/share/693a72ef-5d50-8004-a12d-cee90c4e7afa*/
 
 console.log("It's working")
 
