@@ -159,12 +159,13 @@ h2{
 
     .faciliteter p{
         font-size: 30px;
+        margin: 2% 5% 0%;
     }
 
 
 }
 
-@media (max-width: 760px){
+@media (max-width: 768px){
      main p, .faciliteter p{
         font-size: 15px;
         line-height: 30px;

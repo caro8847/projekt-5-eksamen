@@ -432,7 +432,7 @@ W3 med blockquote  https://www.w3schools.com/tags/tag_blockquote.asp */
     }
 }
 
-@media (max-width: 760px){
+@media (max-width: 768px){
 
     .hero-img img{
         width: 100%;

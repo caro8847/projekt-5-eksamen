@@ -185,7 +185,11 @@ h2{
     height: auto;
 }
 
-@media (max-width: 760px){
+.line-break-big{
+        display: block;
+    }
+
+@media (max-width: 768px){
 
     .line-break{
         display: block;
