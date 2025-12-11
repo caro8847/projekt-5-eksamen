@@ -6,14 +6,14 @@ console.log("It's working")
 
 const navToggle = document.querySelector('.mobile-nav-toggle');
 const primaryNav = document.querySelector('.header__menu');
-const burgerLines = document.querySelectorAll('.burger-line');
+const burgerLines = Array.from(document.querySelectorAll('.burger-line'));
 
 navToggle.addEventListener('click', () => {
     const visibility = primaryNav.getAttribute('data-visible');
 
     if (visibility === "false") {
         primaryNav.setAttribute('data-visible', "true");
-        // Tilføj kryds-animation med for-loop
+        // Tilføj kryds-animation
         for (let i = 0; i < burgerLines.length; i++) {
             burgerLines[i].classList.add('cross');
         }
