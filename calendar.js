@@ -25,7 +25,13 @@ function renderCalendar(month, year) {
   
     const firstDay = new Date(year, month, 1).getDay();
     const daysInMonth = new Date(year, month + 1, 0).getDate();
-    const startDay = firstDay === 0 ? 6 : firstDay - 1;
+    
+    let startDay;
+    if (firstDay === 0) {
+        startDay = 6;
+    } else {
+        startDay = firstDay - 1;
+    }
   
     for (let i = 0; i < startDay; i++) calendarDays.appendChild(document.createElement('div'));
   
