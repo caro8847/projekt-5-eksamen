@@ -1,4 +1,5 @@
 //Maria
+// Har hentet inspiration fra denne youtube video - https://www.youtube.com/watch?v=9_TQFwodpDc
 
 console.log('It works:)')
 
